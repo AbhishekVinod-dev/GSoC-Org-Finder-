@@ -4356,7 +4356,7 @@ if (logoLink) {
       link.classList.add("text-zinc-600", "hover:text-zinc-900");
     });
 
-    // Activate Timeline desktop nav link
+    
     const timelineLink = document.querySelector(
       '.desktop-nav-link[href="#timeline"]'
     );
@@ -4372,7 +4372,7 @@ if (logoLink) {
       );
     }
 
-    // Sync mobile menu links
+  
     document.querySelectorAll(".mobile-menu-link").forEach(link => {
       link.classList.remove(
         "text-orange-600",
@@ -4409,7 +4409,7 @@ if (logoLink) {
 </script>
 
 <script>
-// ═══════════════════ SCROLL TO TOP ═══════════════════
+
 (function () {
   const btn = document.getElementById('scrollToTopBtn');
   if (!btn) return;
@@ -4436,8 +4436,7 @@ if (logoLink) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Keyboard support — Enter and Space already fire click on <button>,
-  // but ensure focus returns to the page top.
+ 
   btn.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -4448,7 +4447,7 @@ if (logoLink) {
 </script>
 
 <script>
-// Next-section button: scrolls down to the next section by id
+
 (function(){
   const btn = document.getElementById('nextSectionBtn');
   if (!btn) return;
@@ -4485,7 +4484,6 @@ if (logoLink) {
   window.addEventListener('resize', updateVisibility);
   document.addEventListener('DOMContentLoaded', updateVisibility);
 
-  // Optional: keyboard shortcut 'j' to go to next section when not typing
   document.addEventListener('keydown', (e)=>{
     const active = document.activeElement;
     if (e.key === 'j' && active && !/^(INPUT|TEXTAREA|SELECT)$/.test(active.tagName)) {
